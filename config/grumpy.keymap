@@ -1,5 +1,6 @@
 #include "base_grumpy.h"
-
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 //   ____________________________  ____________________________
 //  /       0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7      \
@@ -9,60 +10,57 @@
 //                       ------      ------
 
 / {
-
     keymap {
         compatible = "zmk,keymap";
 
         aptmak {
             label = "APT";
-
             bindings = <
-                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                &my_lt NUM SQT &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol        &my_lt FUN TAB
-                                                                            &my_lt NAV SPACE &my_lt SYM E
+                &kp B       &kp F       &kp P        &kp B             &kp J         &kp L        &kp U       &kp Y
+&hl LCTRL R     &hl LALT S  &hl LGUI T  &hl LSHFT H  &hl RALT K        &hr RALT X    &hr RSHFT N  &hr RGUI A  &hr LALT I  &hr RCTRL O
+&my_lt NUM SQT  &kp C       &kp G       &kp D                                        &kp M        &comsem     &dotcol     &my_lt FUN TAB
+                                                     &my_lt NAV SPACE  &my_lt SYM E
             >;
         };
+
         numbers {
             label = "NUM";
-
             bindings = <
-                               &kp N9         &kp N8         &kp N7         &kp ASTERISK   &kp PLUS       &kp N7         &kp N8         &kp N9
-                &hl LCTRL N0   &hl LALT N6    &hl LGUI N5    &hl LSHFT N4   &hl RALT SLASH &kp MINUS      &kp N4         &kp N5         &kp N6         &kp DOT
-                &trans         &kp N3         &kp N2         &kp N1                                       &kp N1         &kp N2         &kp N3         &kp E
-                                                                            &trans         &kp N0
+              &kp N9       &kp N8       &kp N7        &kp ASTERISK    &kp PLUS   &kp N7  &kp N8  &kp N9
+&hl LCTRL N0  &hl LALT N6  &hl LGUI N5  &hl LSHFT N4  &hl RALT SLASH  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp DOT
+&trans        &kp N3       &kp N2       &kp N1                                   &kp N1  &kp N2  &kp N3  &kp E
+                                                      &trans          &kp N0
             >;
         };
+
         navigation {
             label = "NAV";
-
             bindings = <
-                               &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT
-                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &none          &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
-                &trans         &kp HOME       &kp PG_DN      &kp END                                       &kp HOME       &kp PG_UP      &kp END        &trans
-                                                                             &trans         &trans
+           &kp INSERT     &kp UP         &kp BSPC         &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL    &kp INSERT
+&kp LCTRL  &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT  &kp C_MUTE    &none         &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT
+&trans     &kp HOME       &kp PG_DN      &kp END                                      &kp HOME  &kp PG_UP  &kp END     &trans
+                                                          &trans        &trans
             >;
         };
+
         symbols {
             label = "SYM";
-
             bindings = <
-                               &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC       &kp RBRC       &kp BACKSLASH  &kp PIPE       &kp LT
-                &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &kp LPAR       &kp RPAR       &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
-                &trans         &kp TILDE      &kp SQT        &kp UNDERSCORE                                 &kp MINUS      &kp PLUS       &kp EQUAL      &trans
-                                                                              &kp RBKT       &trans
+          &kp GRAVE  &kp DQT   &kp RA(LS(SEMI))  &kp LBRC  &kp RBRC  &kp BACKSLASH  &kp PIPE      &kp LT
+&kp EXCL  &kp AT     &kp HASH  &kp DOLLAR        &kp LPAR  &kp RPAR  &kp AMPERSAND  &kp ASTERISK  &kp PERCENT  &kp CARET
+&trans    &kp TILDE  &kp SQT   &kp UNDERSCORE                        &kp MINUS      &kp PLUS      &kp EQUAL    &trans
+                                                 &kp RBKT  &trans
             >;
         };
+
         function {
             label = "FUN";
-
             bindings = <
-                               &bootloader    &trans         &trans         &trans         &kp F12        &kp F7         &kp F8         &kp F9
-                &trans         &trans         &trans         &trans         &trans         &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
-                &trans         &trans         &trans         &trans                                       &kp F1         &kp F2         &kp F3         &trans
-                                                                            &trans         &trans
+        &bootloader  &trans  &trans  &trans  &kp F12  &kp F7  &kp F8  &kp F9
+&trans  &trans       &trans  &trans  &trans  &kp F11  &kp F4  &kp F5  &kp F6  &kp F10
+&trans  &trans       &trans  &trans                   &kp F1  &kp F2  &kp F3  &trans
+                                     &trans  &trans
             >;
         };
-
     };
 };
