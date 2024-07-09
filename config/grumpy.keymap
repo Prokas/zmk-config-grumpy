@@ -16,7 +16,7 @@
         aptmak {
             label = "APT";
             bindings = <
-                &kp B       &kp F       &kp P        &kp B             &kp J         &kp L        &kp U       &kp Y
+                &kp W       &kp F       &kp P        &kp B             &kp J         &kp L        &kp U       &kp Y
 &hl LCTRL R     &hl LALT S  &hl LGUI T  &hl LSHFT H  &hl RALT K        &hr RALT X    &hr RSHFT N  &hr RGUI A  &hr LALT I  &hr RCTRL O
 &my_lt NUM SQT  &kp C       &kp G       &kp D                                        &kp M        &comsem     &dotcol     &my_lt FUN TAB
                                                      &my_lt NAV SPACE  &my_lt SYM E
