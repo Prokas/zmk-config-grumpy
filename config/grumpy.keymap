@@ -18,11 +18,11 @@
             label = "NEW_MACRO";
         };
 
-        screenshot: new_macro {
+        screenshot: screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(KP_NUMBER_4))>;
-            label = "NEW_MACRO";
+            bindings = <&kp LG(LS(KP_NUMBER_4))>;
+            label = "SCREENSHOT";
         };
     };
 
