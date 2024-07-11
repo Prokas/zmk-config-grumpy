@@ -52,9 +52,9 @@
         navigation {
             label = "NAV";
             bindings = <
-           &kp INSERT     &kp UP         &kp BSPC         &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL    &kp INSERT
-&kp LCTRL  &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT  &kp C_MUTE    &none         &kp LEFT  &kp DOWN   &kp UP      &kp RIGHT
-&trans     &kp HOME       &kp PG_DN      &kp END                                      &kp HOME  &kp PG_UP  &kp END     &trans
+           &kp INSERT     &kp UP         &kp BSPC         &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &kp INSERT
+&kp LCTRL  &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT  &kp C_MUTE    &none         &kp LEFT  &kp DOWN        &kp UP          &kp DELETE
+&trans     &kp HOME       &kp PG_DN      &kp END                                      &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                                                           &trans        &trans
             >;
         };
