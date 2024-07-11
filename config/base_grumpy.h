@@ -136,7 +136,7 @@ combo_##NAME { \
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
-            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 18 19 20 21 26 27>;
+            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 17 18 19 20 21 26>;
         };
 
         my_lt: my_layer_taps {
