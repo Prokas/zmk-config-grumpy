@@ -53,7 +53,7 @@ combo_##NAME { \
         COMBO(dash, &kp MINUS, 22 23)
         COMBO(enter, &kp ENTER, 22 24)
         COMBO(esc, &kp ESC, 20 21)
-        COMBO(h, &kp H, 13 23)
+        COMBO(h, &kp H, 13 22)
 /* parentheticals */
         COMBO(lbrc, &kp LBRC, 0 9)
         COMBO(lbkt, &kp LBKT, 1 10)
