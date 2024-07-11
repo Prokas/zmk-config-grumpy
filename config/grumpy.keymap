@@ -11,10 +11,17 @@
 
 / {
     macros {
-        new_macro: new_macro {
+        fullscreen: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(RA(LG(M)))>;
+            label = "NEW_MACRO";
+        };
+
+        screenshot: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(KP_NUMBER_4))>;
             label = "NEW_MACRO";
         };
     };
@@ -65,10 +72,10 @@
         function {
             label = "FUN";
             bindings = <
-        &bootloader  &trans  &trans  &trans      &kp F12  &kp F7  &kp F8  &kp F9
-&trans  &trans       &trans  &trans  &trans      &kp F11  &kp F4  &kp F5  &kp F6  &kp F10
-&trans  &trans       &trans  &trans                       &kp F1  &kp F2  &kp F3  &trans
-                                     &new_macro  &trans
+        &bootloader  &trans  &trans  &trans       &kp F12      &kp F7  &kp F8  &kp F9
+&trans  &trans       &trans  &trans  &trans       &kp F11      &kp F4  &kp F5  &kp F6  &kp F10
+&trans  &trans       &trans  &trans                            &kp F1  &kp F2  &kp F3  &trans
+                                     &fullscreen  &screenshot
             >;
         };
     };
