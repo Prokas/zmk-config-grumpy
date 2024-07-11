@@ -21,7 +21,7 @@
         screenshot: screenshot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(KP_NUMBER_4))>;
+            bindings = <&kp LG(LS(NUMBER_4))>;
             label = "SCREENSHOT";
         };
     };
