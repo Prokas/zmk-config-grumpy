@@ -45,9 +45,9 @@ combo_##NAME { \
     combos {
         compatible = "zmk,combos";
 /* usually on base layer */
-        COMBO(q, &kp Q, 1 2)
+        COMBO(q, &kp Q, 0 1)
         COMBO(z, &kp Y, 4 5)
-        COMBO(v, &kp X, 0 1)
+        COMBO(v, &kp X, 19 20)
         COMBO(sch, &macro_shiftable_sch, 0 2)
         COMBO(slash, &kp SLASH, 23 24)
         COMBO(dash, &kp MINUS, 22 23)
