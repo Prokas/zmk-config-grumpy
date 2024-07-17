@@ -34,7 +34,7 @@
             label = "APT";
             bindings = <
                 &kp W       &kp E       &kp R        &kp T             &kp Z                 &kp U        &kp I       &kp O
-&hl LCTRL A     &hl LALT S  &hl LGUI D  &hl LSHFT F  &trans            &trans                &hr RSHFT J  &hr RGUI K  &kp L    &kp P
+&hl LCTRL A     &hl LALT S  &hl LGUI D  &hl LSHFT F  &kp G             &kp N                 &hr RSHFT J  &hr RGUI K  &kp L    &kp P
 &my_lt NUM SQT  &kp C       &kp V       &kp B                                                &kp M        &comsem     &dotcol  &my_lt FUN TAB
                                                      &my_lt NAV SPACE  &my_lt SYM BACKSPACE
             >;
