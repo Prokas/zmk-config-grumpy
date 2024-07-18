@@ -1,6 +1,5 @@
 #include "base_grumpy.h"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 //   ____________________________  ____________________________
@@ -55,7 +54,7 @@
             bindings = <
            &kp INSERT     &kp UP         &kp BSPC         &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &kp INSERT
 &kp LCTRL  &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT  &kp C_MUTE    &none         &trans    &trans          &kp UP          &kp DELETE
-&trans     &kp HOME       &kp PG_DN      &kp END                                      &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans     &trans         &trans         &trans                                       &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                                                           &trans        &trans
             >;
         };
@@ -73,10 +72,10 @@
         function {
             label = "FUN";
             bindings = <
-             &kp SEMICOLON  &kp SQT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp F12      &kp F7  &kp F8  &kp F9
-&trans       &trans         &trans      &trans            &kp NON_US_BACKSLASH  &kp F11      &kp F4  &kp F5  &kp F6  &kp F10
-&bootloader  &trans         &bt BT_PRV  &bt BT_CLR                                           &kp F1  &kp F2  &kp F3  &trans
-                                                          &fullscreen           &screenshot
+             &kp SEMICOLON  &kp SQT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp F12      &kp F7  &kp F8  &kp F9
+&trans       &trans         &trans   &trans            &kp NON_US_BACKSLASH  &kp F11      &kp F4  &kp F5  &kp F6  &kp F10
+&bootloader  &trans         &trans   &trans                                               &kp F1  &kp F2  &kp F3  &trans
+                                                       &fullscreen           &screenshot
             >;
         };
     };
