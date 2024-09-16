@@ -51,6 +51,7 @@ combo_##NAME { \
         COMBO(sch, &macro_shiftable_sch, 0 2)
         COMBO(slash, &kp SLASH, 23 24)
         COMBO(dash, &kp MINUS, 22 23)
+        COMBO(enter, &kp ENTER, 8 18)
         COMBO(enter, &kp ENTER, 22 24)
         COMBO(esc, &kp ESC, 20 21)
 /* parentheticals */
