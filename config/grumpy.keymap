@@ -61,7 +61,7 @@
         navigation {
             label = "NAV";
             bindings = <
-           &kp INSERT     &kp UP         &kp BSPC         &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &kp INSERT
+           &trans         &kp UP         &kp BSPC         &kp C_VOL_DN  &kp C_VOL_UP  &kp BSPC  &kp DEL         &kp INSERT
 &kp LCTRL  &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT  &kp C_MUTE    &none         &trans    &trans          &kp UP          &kp DELETE
 &trans     &trans         &trans         &kp F13                                      &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
                                                           &trans        &trans
