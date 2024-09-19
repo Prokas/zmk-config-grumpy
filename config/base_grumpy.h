@@ -74,7 +74,7 @@ combo_##NAME { \
     
         COMBO(Scomma, &kp SEMI, 23 27)
         COMBO(Sdot, &kp COLON, 24 27)
-        COMBO(Se, &kp LS(E), 14 15 27)
+
     };
 };
 //   ____________________________  ____________________________
